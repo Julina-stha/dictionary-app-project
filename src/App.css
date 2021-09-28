@@ -1,5 +1,16 @@
-.App-header {
+body {
   text-align: center;
-  font-family: "Gemunu Libre", sans-serif;
+  font-family: "Poiret One", cursive;
   font-size: 50px;
+}
+
+.App {
+  display: block;
+  margin-top: 15%;
+}
+
+.search-engine {
+  width: 25%;
+  margin-top: 2%;
+  font-size: 30px;
 }

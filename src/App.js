@@ -1,4 +1,6 @@
 import './App.css';
+import Dictionary from './Dictionary';
+import FooterContent from './FooterContent';
 
 function App() {
   return (
@@ -6,6 +8,10 @@ function App() {
       <header className="App-header">
         Dictionary App
       </header>
+      <main>
+        <Dictionary />
+      </main>
+      <footer><FooterContent /></footer>
     </div>
   );
 }
