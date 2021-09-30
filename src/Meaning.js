@@ -4,7 +4,6 @@ import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
 
-  console.log(props.meaning);
   return (
     <div className="Meaning">
       <p className="text-capitalize">
