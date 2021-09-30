@@ -24,7 +24,7 @@ export default function Dictionary() {
     <div className="Dictionary">
       <h2>What word are you looking for? <img src="https://img.icons8.com/ios/100/000000/thinking-bubble.png" className="cloud" alt="" width="60" /></h2>
       <form onSubmit={search}>
-        <input type="search" className="search-engine" onChange={recordTypedWord} autoComplete="off"></input><i className="fas fa-search"></i>
+        <input type="search" className="search-engine" onChange={recordTypedWord} autoComplete="off"></input><img src="https://img.icons8.com/cotton/45/000000/search--v2.png" className="search-icon" width="45" alt=""/>
       </form>
       <Result resultData={results} searchWord={keyWord}/>
     </div>

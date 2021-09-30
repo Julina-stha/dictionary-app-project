@@ -40,11 +40,9 @@ input[type="search" i] {
   padding: 0px 15px 0px 15px;
 }
 
-.fas {
-  color: rgba(0, 0, 0, 0.199);
-  font-size: 30px;
-  font-weight: 600;
-  left: -30px;
+.search-icon {
+  left: -38px;
+  bottom: 6px;
   position: relative;
 }
 
