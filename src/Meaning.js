@@ -1,4 +1,5 @@
 import React from "react";
+import Synonyms from "./Synonyms";
 
 
 export default function Meaning(props) {
@@ -6,7 +7,7 @@ export default function Meaning(props) {
   console.log(props.meaning);
   return (
     <div className="Meaning">
-      <p>
+      <p className="text-capitalize">
         <strong>
           {props.meaning.partOfSpeech}
         </strong>
@@ -15,11 +16,12 @@ export default function Meaning(props) {
         return (
           <div key={index}>
             <p>
-              {definition.definition}
+              <strong>Definition: </strong>{definition.definition}
               <br />
               <em>
-                {definition.example}
+                <strong>Example: </strong>{definition.example}
               </em>
+              <Synonyms synonyms={definition.synonyms}/>
             </p>
           </div>
         );

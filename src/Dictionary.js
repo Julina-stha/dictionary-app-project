@@ -22,7 +22,7 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <h2>What are you looking for? <img src="https://img.icons8.com/ios/100/000000/thinking-bubble.png" className="cloud" alt="" width="60" /></h2>
+      <h2>What word are you looking for? <img src="https://img.icons8.com/ios/100/000000/thinking-bubble.png" className="cloud" alt="" width="60" /></h2>
       <form onSubmit={search}>
         <input type="search" className="search-engine" onChange={recordTypedWord} autoComplete="off"></input><i className="fas fa-search"></i>
       </form>
