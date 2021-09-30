@@ -7,8 +7,8 @@ export default function Synonyms(props) {
         <strong>Synonyms: </strong>
         {props.synonyms.map(function (synonym, index) {
           return (
-            <ul >
-              <li key={index} className="text-capitalize">{synonym}</li>
+            <ul  key={index} >
+              <li className="text-capitalize">{synonym}</li>
             </ul>
           )
 
