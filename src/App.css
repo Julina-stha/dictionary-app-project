@@ -1,32 +1,50 @@
 body {
+  font-family: monospace;
   text-align: center;
-  font-family: "Poiret One", cursive;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .App-header {
-  font-size: 70px;
+  font-size: 60px;
+  margin-top: 10%;
 }
+
+form:-ms-keyboard-active .App-header {
+  margin-top: 0%;
+}
+
 .App {
   display: block;
-  margin-top: 10%;
 }
 
 .search-engine {
   position: relative;
   left: 13px;
   width: 25%;
-  font-size: 30px;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 10px 10px rgb(0 0 0/10%);
+  border-radius: 3px;
 }
 h2 {
-  margin-top: 15px;
-  font-size: 40px;
+  font-size: 26px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+#KeyWord {
+  font-size: 25px;
 }
 
 .cloud {
   position: relative;
-  bottom: 17px;
-  right: -10px;
+  bottom: 10px;
+  right: 5px;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -41,8 +59,8 @@ input[type="search" i] {
 }
 
 .search-icon {
-  left: -38px;
-  bottom: 6px;
+  left: -35px;
+  bottom: 3px;
   position: relative;
 }
 
@@ -87,4 +105,47 @@ body {
   100% {
     transform: translateX(25%);
   }
+}
+
+.Dictionary section {
+  padding: 15px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #999;
+  border-radius: 3px;
+  border-color: #767676;
+  width: 50%;
+  background: whitesmoke;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 10px rgb(0 0 0/10%);
+  z-index: 1;
+}
+
+.Dictionary section::after {
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  border: 2px solid black;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  z-index: 2;
+}
+
+.Phonetic button {
+  position: relative;
+  z-index: 3;
+}
+
+.phonetic-button {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.phonetics-part section {
+  position: sticky;
+  top: 0;
+  z-index: 4;
 }
