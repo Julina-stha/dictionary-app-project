@@ -1,0 +1,6 @@
+.Synonyms .text-capitalize {
+  list-style: none;
+  display: inline-block;
+  padding-right: 15px;
+  text-decoration: underline;
+}

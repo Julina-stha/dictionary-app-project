@@ -1,0 +1,21 @@
+.Meaning {
+  text-align: left;
+}
+
+.MeaningResults {
+  padding: 10px 20px 10px 20px;
+}
+
+#KeyWord {
+  font-size: 25px;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.examples {
+  margin-top: 15px;
+}
+
+.synonyms {
+  margin-top: 15px;
+}

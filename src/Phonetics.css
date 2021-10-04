@@ -1,0 +1,15 @@
+.Phonetic button {
+  position: relative;
+  z-index: 3;
+}
+
+.phonetic-button {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.phonetics-part section {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
