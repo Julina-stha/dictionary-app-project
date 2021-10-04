@@ -1,30 +1,37 @@
 import React from "react";
 import Synonyms from "./Synonyms";
+import "./Meaning.css";
 
 
 export default function Meaning(props) {
 
   return (
     <div className="Meaning">
-      <p className="text-capitalize">
-        <strong>
-          {props.meaning.partOfSpeech}
-        </strong>
-      </p>
-      {props.meaning.definitions.map(function (definition, index) {
-        return (
-          <div key={index}>
-            <p>
-              <strong>Definition: </strong>{definition.definition}
-              <br />
-              <em>
-                <strong>Example: </strong>{definition.example}
-              </em>
-              <Synonyms synonyms={definition.synonyms}/>
-            </p>
-          </div>
-        );
-      })}
+      <section>
+        <p className="text-capitalize" id="KeyWord">
+          <strong>
+            {props.meaning.partOfSpeech}
+          </strong>
+        </p>
+        {props.meaning.definitions.map(function (definition, index) {
+          return (
+            <div className="MeaningResults" key={index}>
+              <div className="definitions">
+                <strong>Definition: </strong>{definition.definition}
+              </div>
+              <div className="examples">
+                <em>
+                  <strong>Example: </strong>"{definition.example}"
+                </em>
+              </div>
+              <div className="synonyms">
+                <Synonyms synonyms={definition.synonyms}/>
+              </div>
+
+            </div>
+          );
+        })}
+      </section>
     </div>
   );
 
