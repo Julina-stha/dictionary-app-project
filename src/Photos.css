@@ -1,6 +1,13 @@
 .Photos img {
   border-radius: 3px;
   margin: 15px 0px;
+  transition: transform 0.25s ease;
+}
+
+.Photos img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .col-4 {
@@ -10,4 +17,8 @@
 
 .row {
   padding: 0px 20px;
+}
+
+.Photos {
+  margin-top: 0%;
 }

@@ -1,12 +1,12 @@
 .footer {
   font-size: 15px;
   font-weight: lighter;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .footer img {
-  width: 20px;
-  margin-top: -10px;
+  width: 18px;
+  margin-top: 0px;
   background-color: black;
   border-radius: 3px;
 }
@@ -16,6 +16,8 @@
 }
 
 .fa-github {
+  position: relative;
+  top: 4px;
   font-size: 20px;
   color: black;
 }

@@ -1,6 +1,7 @@
 .Phonetic button {
   position: relative;
   z-index: 3;
+  border-radius: 3px;
 }
 
 .phonetic-button {

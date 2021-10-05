@@ -18,6 +18,9 @@ h3 {
   font-size: 20px;
 }
 
+.book {
+  margin-left: -2%;
+}
 .cloud {
   position: relative;
   bottom: 10px;
@@ -50,7 +53,8 @@ input[type="search" i] {
   border-radius: 3px;
   border-color: #767676;
   width: 50%;
-  background: #ffffff;
+
+  background-color: rgba(245, 245, 245, 0.514);
   margin-bottom: 30px;
   box-shadow: 0px 10px 10px rgb(0 0 0/10%);
   z-index: 1;
