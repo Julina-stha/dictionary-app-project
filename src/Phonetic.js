@@ -7,7 +7,6 @@ export default function Phonetic(props) {
   function handleClick() {
     audio.play();
   }
-  console.log(props.phonetic);
 
   if (props.phonetic) {
     return (
