@@ -27,6 +27,7 @@ export default function Dictionary() {
 
 
   function handleDictionaryResponse(response) {
+    console.log(response.data);
     setResults(response.data[0]);
   }
 
@@ -37,7 +38,7 @@ export default function Dictionary() {
   return (
     <div className="Dictionary">
       <header className="App-header">
-        Dictionary for you! <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-book-back-to-school-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png" alt="" />
+        Dictionary for you! <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-book-back-to-school-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png" className="book" alt="" />
       </header>
       <h2>What word are you looking for today? <img src="https://img.icons8.com/ios/100/000000/thinking-bubble.png" className="cloud" alt="" width="50" /></h2>
       <form onSubmit={search}>
