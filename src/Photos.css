@@ -1,0 +1,13 @@
+.Photos img {
+  border-radius: 3px;
+  margin: 15px 0px;
+}
+
+.col-4 {
+  position: relative;
+  z-index: 3;
+}
+
+.row {
+  padding: 0px 20px;
+}
