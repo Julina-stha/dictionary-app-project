@@ -7,12 +7,15 @@ export default function Synonyms(props) {
       <div className="Synonyms">
         <strong>Synonyms: </strong>
         {props.synonyms.map(function (synonym, index) {
-          return (
-            <div className="text-capitalize" key={index} >
-              {synonym},
-            </div>
-          )
-
+          if (index < 6) {
+            return (
+              <div className="text-capitalize" key={index} >
+                {synonym},
+              </div>
+            )
+          } else {
+            return null;
+          }
         })}
       </div>
     )

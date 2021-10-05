@@ -14,21 +14,25 @@ export default function Meaning(props) {
           </strong>
         </p>
         {props.meaning.definitions.map(function (definition, index) {
-          return (
-            <div className="MeaningResults" key={index}>
-              <div className="definitions">
-                <strong>Definition: </strong>{definition.definition}
+          if (index < 1) {
+            return (
+              <div className="MeaningResults" key={index}>
+                <div className="definitions">
+                  <strong>Definition: </strong>{definition.definition}
+                </div>
+                <div className="examples">
+                  <em>
+                    <strong>Example: </strong>"{definition.example}"
+                  </em>
+                </div>
+                <div className="synonyms">
+                  <Synonyms synonyms={definition.synonyms}/>
+                </div>
               </div>
-              <div className="examples">
-                <em>
-                  <strong>Example: </strong>"{definition.example}"
-                </em>
-              </div>
-              <div className="synonyms">
-                <Synonyms synonyms={definition.synonyms}/>
-              </div>
-            </div>
-          );
+            );
+          } else {
+            return null;
+          }
         })}
       </section>
     </div>

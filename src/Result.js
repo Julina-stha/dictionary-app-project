@@ -13,11 +13,15 @@ export default function Result(props) {
             <h3>You are looking for the word:
             <div className="text-capitalize" id="KeyWord"><strong>{props.resultData.word}</strong></div></h3>
             {props.resultData.phonetics.map(function (phonetic, index) {
-              return (
-                <div className="phonetic-button" key={index}>
-                  <Phonetic phonetic={phonetic} />
-                </div>
-              )
+              if (index < 1) {
+                return (
+                  <div className="phonetic-button" key={index}>
+                    <Phonetic phonetic={phonetic} />
+                  </div>
+                )
+              } else {
+                return null;
+              }
             })}
           </section>
         </div>
@@ -27,8 +31,9 @@ export default function Result(props) {
                 <Meaning meaning={meaning}/>
             </div>
             )
-          })}
+        })}
       </div>
+      
   );
   } else {
     return null;
