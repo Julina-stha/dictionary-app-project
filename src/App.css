@@ -13,6 +13,10 @@ body {
   text-decoration: none;
 }
 
+.title:hover {
+  transition: 0.28s ease-in-out;
+}
+
 form:-ms-keyboard-active .App-header {
   margin-top: 0%;
 }
