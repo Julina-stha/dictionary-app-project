@@ -10,7 +10,9 @@ export default function Synonyms(props) {
           if (index < 6) {
             return (
               <div className="text-capitalize" key={index} >
-                {synonym},
+                <a href="/" onClick={props.synonymSearch}>
+                  {synonym}
+                </a>
               </div>
             )
           } else {
