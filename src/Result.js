@@ -28,7 +28,7 @@ export default function Result(props) {
         {props.resultData.meanings.map(function (meaning, index) {
             return (
               <div key={index}>
-                <Meaning meaning={meaning}/>
+                <Meaning meaning={meaning} synonymSearch={props.synonymSearch}/>
             </div>
             )
         })}
