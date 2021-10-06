@@ -2,7 +2,6 @@ import React from "react";
 import "./Photos.css";
 
 export default function Photos(props) {
-
   if (props.photoData.length > 0 ) {
     return (
       <section className="Photos">

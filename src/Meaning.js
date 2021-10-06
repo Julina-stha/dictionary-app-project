@@ -14,7 +14,7 @@ export default function Meaning(props) {
           </strong>
         </p>
         {props.meaning.definitions.map(function (definition, index) {
-          if (index < 1) {
+          if (index < 2) {
             return (
               <div className="MeaningResults" key={index}>
                 <div className="definitions">

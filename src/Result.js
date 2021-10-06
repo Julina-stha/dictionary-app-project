@@ -20,7 +20,7 @@ export default function Result(props) {
                   </div>
                 )
               } else {
-                return null;
+                return (null);
               }
             })}
           </section>
