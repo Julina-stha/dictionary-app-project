@@ -38,7 +38,6 @@ body {
   position: fixed;
   right: -50%;
   top: 0;
-
   z-index: -1;
 }
 

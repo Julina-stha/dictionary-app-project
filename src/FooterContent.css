@@ -2,6 +2,7 @@
   font-size: 15px;
   font-weight: lighter;
   margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .footer img {
@@ -27,5 +28,9 @@
 }
 
 .Coder {
-  color: black;
+  color: #46b41b;
+}
+
+.Coder:hover {
+  color: white;
 }

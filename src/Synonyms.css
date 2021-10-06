@@ -1,5 +1,7 @@
 .Synonyms .text-capitalize {
   list-style: none;
   display: inline-block;
+  position: relative;
   padding-right: 15px;
+  z-index: 4;
 }
