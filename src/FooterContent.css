@@ -35,10 +35,13 @@
   color: white;
 }
 
+br {
+  display: none;
+}
+
 @media only screen and (max-width: 414px) {
   .footer {
     font-size: 10.5px;
-    margin-top: 15em;
   }
   .footer img {
     width: 13px;
@@ -47,5 +50,9 @@
   .fa-github {
     font-size: 15px;
     color: black;
+  }
+
+  br {
+    display: block;
   }
 }
