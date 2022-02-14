@@ -62,8 +62,8 @@ export default function Dictionary() {
       <h2>What word are you looking for today? <img src="https://img.icons8.com/ios/100/000000/thinking-bubble.png" className="cloud" alt="" width="50" /></h2>
       <form onSubmit={search}>
         <input type="search" className="search-engine" onChange={recordTypedWord} autoComplete="off" placeholder="Search for a word..."></input>
+        <img src="https://img.icons8.com/cotton/45/000000/search--v2.png" className="search-icon" width="45" alt=""/>
       </form>
-      <img src="https://img.icons8.com/cotton/45/000000/search--v2.png" className="search-icon" width="45" alt=""/>
       <Result resultData={results} searchWord={keyWord} synonymSearch={synonymSearch} />
       <Photos photoData={photos} />
     </div>

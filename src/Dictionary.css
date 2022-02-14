@@ -32,7 +32,7 @@ h3 {
 }
 
 form {
-  padding: 0px 500px 0px 500px;
+  padding: 0px 430px 0px 430px;
 }
 
 .search-engine {
@@ -45,8 +45,9 @@ form {
 }
 
 .search-icon {
-  margin-top: -8.2em;
-  margin-left: 20em;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 2px;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -58,6 +59,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 input[type="search" i] {
   padding: 0px 15px 0px 15px;
+}
+
+.dictionary {
+  padding: 0px 50px 0px 50px;
 }
 
 .dictionary section {
@@ -87,7 +92,76 @@ input[type="search" i] {
   z-index: 2;
 }
 
+@media only screen and (max-width: 1024px) {
+  form {
+    padding: 0px 300px 0px 300px;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .dictionary {
+    padding: 0px;
+  }
+  .search-engine {
+    width: 100%;
+    left: 0%;
+    height: 40px;
+  }
+
+  form {
+    padding: 0px 250px 0px 250px;
+  }
+
+  input[type="search" i] {
+    padding: 0px 10px 0px 10px;
+    font-size: 13.5px;
+  }
+  .search-icon {
+    width: 35px;
+    margin-left: -40px;
+  }
+  .dictionary section {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .app-header {
+    font-size: 55px;
+    line-height: 1.2em;
+  }
+  h2 {
+    padding: 0px 50px 0 50px;
+    line-height: 1.7em;
+  }
+
+  .cloud {
+    width: 40px;
+  }
+  .search-engine {
+    width: 100%;
+    left: 0%;
+    height: 40px;
+  }
+
+  form {
+    padding: 0px 150px 0px 150px;
+  }
+
+  input[type="search" i] {
+    padding: 0px 10px 0px 10px;
+    font-size: 13.5px;
+  }
+  .search-icon {
+    width: 35px;
+    margin-left: -40px;
+  }
+}
+
 @media only screen and (max-width: 414px) {
+  .dictionary {
+    padding: 0px;
+  }
   .app-header {
     font-size: 55px;
     line-height: 1.2em;
@@ -124,14 +198,11 @@ input[type="search" i] {
 
   input[type="search" i] {
     padding: 0px 10px 0px 10px;
-    font-size: 15px;
+    font-size: 13.5px;
   }
   .search-icon {
     width: 35px;
-    margin: 0em;
-    position: relative;
-    top: -62px;
-    left: 100px;
+    margin-left: -40px;
   }
 
   .dictionary section {

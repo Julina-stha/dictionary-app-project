@@ -1,13 +1,13 @@
 .footer {
   font-size: 15px;
   font-weight: lighter;
-  margin-top: 5px;
+  margin-top: 15em;
   margin-bottom: 20px;
 }
 
 .footer img {
   width: 18px;
-  margin-top: 0px;
+  margin-top: -6px;
   background-color: black;
   border-radius: 3px;
 }
@@ -27,21 +27,21 @@
   transition: 0.5s;
 }
 
-.Coder {
+.coder {
   color: #46b41b;
 }
 
-.Coder:hover {
+.coder:hover {
   color: white;
 }
 
 @media only screen and (max-width: 414px) {
   .footer {
     font-size: 10.5px;
-    margin-top: 9em;
+    margin-top: 15em;
   }
   .footer img {
-    width: 12px;
+    width: 13px;
   }
 
   .fa-github {
