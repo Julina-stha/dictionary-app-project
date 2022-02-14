@@ -33,6 +33,7 @@ h3 {
 
 form {
   padding: 0px 430px 0px 430px;
+  margin-bottom: 18%;
 }
 
 .search-engine {
@@ -90,6 +91,10 @@ input[type="search" i] {
   bottom: 2px;
   right: 2px;
   z-index: 2;
+}
+
+.results {
+  margin-top: -14em;
 }
 
 @media only screen and (max-width: 1024px) {
