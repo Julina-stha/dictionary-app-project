@@ -14,17 +14,17 @@
 
 .footer img:hover {
   background-color: white;
+  transition: 0.5s;
 }
 
 .fa-github {
-  position: relative;
-  top: 4px;
   font-size: 20px;
   color: black;
 }
 
 .fa-github:hover {
   color: white;
+  transition: 0.5s;
 }
 
 .Coder {
@@ -33,4 +33,19 @@
 
 .Coder:hover {
   color: white;
+}
+
+@media only screen and (max-width: 414px) {
+  .footer {
+    font-size: 10.5px;
+    margin-top: 9em;
+  }
+  .footer img {
+    width: 12px;
+  }
+
+  .fa-github {
+    font-size: 15px;
+    color: black;
+  }
 }
